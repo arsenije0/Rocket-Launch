@@ -1,0 +1,168 @@
+body {
+	background-color: black;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#rocket {
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+}
+
+.fire {
+	height: 100px;
+	width: 12px;
+	background: linear-gradient(black, red);
+	z-index: -1;
+	position: absolute;
+	bottom: -145px;
+}
+
+#fire-one {
+	left: 0px;
+}
+
+#fire-two {
+	left: 12px;
+}
+
+#fire-three {
+	left: 24px;
+}
+
+#fire-four {
+	left: 36px;
+}
+
+#fire-five {
+	left: 48px;
+}
+
+#fire-six {
+	left: 60px;
+}
+
+#core {
+	position: absolute;
+	background-color: orange;
+	height: 40px;
+	width: 40px;
+	left: 15px;
+	bottom: -68px;
+	border-radius: 50%;
+	z-index: 0;
+}
+
+#engine {
+	position: absolute;
+	background-color: grey;
+	height: 50px;
+	width: 80px;
+	left: -10px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	z-index: 1;
+}
+
+#tank {
+	position: absolute;
+	bottom: 0px;
+	left: -5px;
+	height: 100px;
+	width: 80px;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	z-index: 2;
+}
+
+#mid {
+	position: absolute;
+	height: 20px;
+	width: 75px;
+	background-color: blueviolet;
+	bottom: 105px;
+	left: -3px;
+	border-radius: 3px;
+	z-index: 3;
+}
+
+#main-tank {
+	position: absolute;
+	bottom: 130px;
+	left: -5px;
+	height: 200px;
+	width: 80px;
+	background-color: grey;
+	border-radius: 5px;
+	z-index: 4;
+}
+
+#capsule {
+	position: absolute;
+	bottom: 335px;
+	left: -5px;
+	height: 70px;
+	width: 80px;
+	background-color: royalblue;
+	border-radius: 5px;
+	border-top-left-radius: 200px;
+	border-top-right-radius: 200px;
+	z-index: 5;
+}
+
+#anthena {
+	position: absolute;
+	bottom: 405px;
+	left: 35px;
+	height: 130px;
+	width: 2px;
+	background-color: grey;
+	z-index: 6;
+}
+
+#anthena-two {
+	position: absolute;
+	bottom: 405px;
+	left: 30px;
+	height: 60px;
+	width: 5px;
+	background-color: purple;
+	z-index: 7;
+}
+
+#half-modal {
+	position: fixed;
+	height: 100%;
+	width: 50%;
+	top: 0;
+	left: 0;
+}
+
+.btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100px;
+	width: 100px;
+	color: white;
+	border-radius: 50%;
+	border: 2px solid white;
+	transition: all .5s;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:hover {
+	cursor: pointer;
+	color: firebrick;
+	border-color: firebrick;
+}

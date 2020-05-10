@@ -1,0 +1,391 @@
+body {
+	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+#intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 15;
+	opacity: 0;
+}
+
+#intro h1 {
+	font-size: 60px;
+	color: red;
+	margin-top: 0;
+}
+
+#btn-one {
+	border: 2px solid red;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	color: red;
+	font-size: 25px;
+	z-index: 100;
+	background-color: transparent;
+	transition: all .3s;
+}
+
+#btn-one:hover {
+	cursor: pointer;
+	color: white;
+	background-color: red;
+}
+
+#earth {
+	position: absolute;
+	height: 200px;
+	bottom: 0px;
+	left: 0px; 
+	background: linear-gradient(to bottom, white, teal);
+	z-index: -2;
+	width: 100%;
+}
+
+.explosion {
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	background-color: whitesmoke;
+
+	border-radius: 50%;
+	border: 2px solid black;
+	display: none;
+}
+
+#explosion-one {
+	left: 50%;
+	bottom: 100px;
+	z-index: 0;
+	background-color: rgb(235,139,102);
+	background: radial-gradient(gold, red, rgb(235,139,102));
+}
+
+#explosion-two {
+	right: 50%;
+	bottom: 120px;
+	z-index: 1;
+	background-color: rgb(226,88,34);
+	background: radial-gradient(gold, red, rgb(226,88,34));
+}
+
+#explosion-three {
+	right: 40%;
+	bottom: 130px;
+	z-index: 2;
+	background-color: rgb(232,122,79);
+	background: radial-gradient(gold, red, rgb(232,122,79));
+}
+
+#explosion-four {
+	left: 45%;
+	bottom: 95px;
+	z-index: 3;
+	background-color: rgb(235,139,102);
+	background: radial-gradient(gold, red, rgb(235,139,102));
+}
+
+#plathform {
+	position: absolute; 
+	background: linear-gradient(to bottom, black, royalblue, black);
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100px;
+	width: 200px;
+	top: 20px;
+	display: none;
+}
+
+#line-container-1 {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+#line-1 {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 500px;
+	width: 5px;
+	background-color: #0e1522;
+}
+
+#line-container-2 {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#line-2 {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 600px;
+	width: 8px;
+	background-color: #0e1522;
+}
+
+#line-container-3 {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+#line-3 {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 550px;
+	width: 2px;
+	background-color: #0e1522;
+}
+
+#mountain-container {
+	position: absolute;
+	bottom: 200px;
+	left: 0px;
+	width: 100%;
+	z-index: -3;
+}
+
+.mountain {
+	position: absolute;
+	background: linear-gradient(to bottom right, white, 
+		rgb(170, 212, 229));
+	transform: rotate(45deg);
+}
+
+#mountain-one {
+	bottom: -100px;
+	height: 200px;
+	width: 200px;
+	z-index: 1;
+}
+
+#mountain-two {
+	bottom: -200px;
+	height: 400px;
+	left: 200px;
+	width: 400px;
+	z-index: -1;
+}
+
+#mountain-three {
+	bottom: -400px;
+	height: 700px;
+	left: 500px;
+	width: 700px;
+	z-index: -2;
+}
+
+#mountain-four {
+	bottom: -150px;
+	height: 300px;
+	left: 1200px;
+	width: 300px;
+	z-index: -1;
+}
+
+#rocket {
+	position: absolute;
+	bottom: 200px;
+	width: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	display: none;
+}
+
+#fire-container {
+	display: none;
+}
+
+.fire {
+	height: 60px;
+	width: 7px;
+	background: linear-gradient(black, red);
+	z-index: -1;
+	position: absolute;
+	bottom: -100px;
+}
+
+#fire-one {
+	left: 5px;
+}
+
+#fire-two {
+	left: 12px;
+}
+
+#fire-three {
+	left: 19px;
+}
+
+#fire-four {
+	left: 26px;
+}
+
+#fire-five {
+	left: 33px;
+}
+
+#fire-six {
+	left: 40px;
+}
+
+#core {
+	position: absolute;
+	background-color: orange;
+	height: 20px;
+	width: 20px;
+	bottom: -50px;
+	border-radius: 50%;
+	z-index: 0;
+	display: none;
+}
+
+#engine {
+	position: absolute;
+	background: linear-gradient(to right, whitesmoke, rgb(27, 27, 27));
+	height: 50px;
+	width: 50px;
+	bottom: -40px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	z-index: 1;
+}
+
+#tank {
+	position: absolute;
+	bottom: 12px;
+	height: 60px;
+	width: 50px;
+	background: linear-gradient(to right, whitesmoke, rgb(27, 27, 27));
+	border-radius: 5px;
+	z-index: 2;
+}
+
+#mid {
+	position: absolute;
+	height: 10px;
+	width: 50px;
+	background: linear-gradient(to right, blueviolet, rgb(27, 27, 27));
+	bottom: 73px;
+	border-radius: 3px;
+	z-index: 3;
+}
+
+#main-tank {
+	position: absolute;
+	bottom: 85px;
+	height: 70px;
+	width: 50px;
+	background: linear-gradient(to right, whitesmoke, rgb(27, 27, 27));
+	border-radius: 5px;
+	z-index: 4;
+}
+
+#capsule {
+	position: absolute;
+	bottom: 157px;
+	height: 40px;
+	width: 50px;
+	background: linear-gradient(to right, royalblue, rgb(6, 9, 51));
+	border-top-left-radius: 200px;
+	border-top-right-radius: 200px;
+	z-index: 5;
+}
+
+#anthena {
+	position: absolute;
+	bottom: 196px;
+	height: 80px;
+	width: 2px;
+	background-color: grey;
+	z-index: 6;
+}
+
+#anthena-two {
+	position: absolute;
+	bottom: 196px;
+	height: 40px;
+	width: 5px;
+	background-color: #8C92AC;
+	z-index: 7;
+}
+
+.star-cl {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.line-cl {
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: whitesmoke;
+}
+
+#half-modal {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 50%;
+	top: 0;
+	left: 0;
+}
+
+.btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100px;
+	width: 100px;
+	color: white;
+	border-radius: 50%;
+	border: 4px solid white;
+	transition: all .5s;
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+	animation-name: opacityChanger;
+	animation-duration: 2s;
+}
+
+@keyframes opacityChanger {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:hover {
+	cursor: pointer;
+	color: firebrick;
+	border-color: firebrick;
+}
